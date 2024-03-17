@@ -43,7 +43,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Chi siamo</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -61,8 +61,8 @@
                         </li>
                     </ul>
                     <form class="d-flex mt-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-success" type="submit">Search</button>
+                        <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Cerca</button>
                     </form>
                 </div>
             </div>
@@ -70,11 +70,11 @@
     </nav>
     <!-- /mobile navbar -->
 
-    <!-- sidebar md lg -->
+    <!-- sidebar md lg + main content -->
 
     <div class="d-flex">
         <!-- Sidebar/Navbar Verticale -->
-        <nav class="sidebar bg-dark text-white d-none d-md-block w-30 p-3 vh-100">
+        <nav class="sidebar bg-dark text-white d-none d-md-block w-30 p-3 min-vh-100">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Bootstrap Dashboard</a>
                 <hr class="border border-1">
@@ -129,72 +129,86 @@
                 </div>
             </div>
         </nav>
-   
-    <!-- Main Content -->
-    <div class="container mt-5 mt-md-3">
-        <!-- Title -->
-        <div class="row">
-            <div class="col text-center">
-                <h1 class="fw-bold">Crea nuovo prodotto</h1>
-                <p class="text-secondary">I campi contrassegnati con un asterisco (*) sono obbligatori.</p>
-                <p class="text-secondary">Le immagini devono essere in formato PNG e non devono superare i 4 MB di
-                    dimensione</p>
 
-            </div>
-        </div>
+        <!-- Main Content -->
 
-        <!-- Form Start -->
-        <form>
-            <!-- Name Input -->
-            <div class="mb-3">
-                <label for="productName" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="productName" placeholder="Samsung Galaxy">
-            </div>
 
-            <!-- Price Input -->
-            <div class="mb-3">
-                <label for="productPrice" class="form-label">Prezzo</label>
-                <input type="number" class="form-control" id="productPrice" placeholder="99.00">
-            </div>
+        <div class="container mt-5 mt-md-3 pt-5">
+            <div class="row">
+                <!-- Title -->
 
-            <!-- Brand Select -->
-            <div class="mb-2">
-                <label for="productBrand" class="form-label">Marca</label>
-                <select class="form-select" id="productBrand">
-                    <option selected>--- Seleziona ---</option>
-                    <option value="1">Nokia</option>
-                    <option value="2">Motorola</option>
-                    <option value="3">Blackberry</option>
-                </select>
-            </div>
+                <div class="col-lg-8">
+                    <h1 class="fw-bold">Crea nuovo prodotto</h1>
+                    <p class="text-secondary">I campi contrassegnati con un asterisco (*) sono obbligatori.</p>
+                    <p class="text-secondary">Le immagini devono essere in formato PNG e non devono superare i 4 MB di
+                        dimensione</p>
 
-            <!-- textarea form control -->
-            <div class="row mb-3">
-                <div class="col-12 col-md-6">
-                    <label for="productDescription" class="form-label"></label>
-                    <textarea class="form-control" id="productDescription" rows="3"
-                        placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri"></textarea>
+
+
+
+                    <!-- Form Start -->
+                    <form>
+
+                        <!-- Name Input -->
+                        <div class="mb-3">
+                            <label for="productName" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="productName" placeholder="Samsung Galaxy">
+                        </div>
+
+                        <!-- Price Input -->
+                        <div class="mb-3">
+                            <label for="productPrice" class="form-label">Prezzo</label>
+                            <input type="number" class="form-control" id="productPrice" placeholder="99.00">
+                        </div>
+
+                        <!-- Brand Select -->
+                        <div class="mb-2">
+                            <label for="productBrand" class="form-label">Marca</label>
+                            <select class="form-select" id="productBrand">
+                                <option selected>--- Seleziona ---</option>
+                                <option value="1">Nokia</option>
+                                <option value="2">Motorola</option>
+                                <option value="3">Blackberry</option>
+                            </select>
+                        </div>
+
+                        <!-- textarea form control -->
+                        <div class="row mb-3">
+                            <div class="col-12 col-md-6">
+                                <label for="productDescription" class="form-label"></label>
+                                <textarea class="form-control" id="productDescription" rows="3"
+                                    placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- File Input - input group-->
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Scegli file</span>
+                            <input type="text" class="form-control" placeholder="Nessun file selezionato">
+                            <span class="input-group-text">Immagine</span>
+                        </div>
+
+                        <!-- Outlined Styles Button group -->
+                        <div class="btn-group mb-3" role="group" aria-label="Basic outlined example">
+                            <button type="button" class="btn btn-outline-secondary">Disponibile</button>
+                            <button type="button" class="btn btn-outline-secondary">Esaurito</button>
+                            <button type="button" class="btn btn-outline-secondary">Fuori Produzione</button>
+                            <button type="button" class="btn btn-outline-secondary">In Arrivo</button>
+                        </div>
+
+
+                        
+
+                    </form>
+                    <!-- Form End -->
                 </div>
-            </div>
+            
 
-            <!-- File Input - input group-->
-            <div class="input-group mb-3">
-                <span class="input-group-text">Scegli file</span>
-                <input type="text" class="form-control" placeholder="Nessun file selezionato">
-                <span class="input-group-text">Immagine</span>
-            </div>
 
-            <!-- Outlined Styles Button group -->
-            <div class="btn-group mb-3" role="group" aria-label="Basic outlined example">
-                <button type="button" class="btn btn-outline-secondary">Disponibile</button>
-                <button type="button" class="btn btn-outline-secondary">Esaurito</button>
-                <button type="button" class="btn btn-outline-secondary">Fuori Produzione</button>
-                <button type="button" class="btn btn-outline-secondary">In Arrivo</button>
-            </div>
 
             <!-- Checkbox Inputs for Features -->
-            <div class="row">
-                <div class="col-12 col-lg-6">
+            <div class="col-lg-4">
+                <form>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="cameraCheck">
                         <label class="form-check-label" for="cameraCheck">
@@ -237,29 +251,24 @@
                             <p>colori vividi per un'esperienza visiva unica</p>
                         </label>
                     </div>
-                </div>
+                </form>
             </div>
-
-            <!-- Submit Button -->
-            <div class="row mb-3">
-                <div class="col-12 col-lg-6">
-                    <button type="submit" class="btn btn-primary">Salva</button>
-                </div>
+        </div>
+        <!-- Submit Button -->
+        <div class="row mb-3">
+            <div class="col-12 col-lg-6">
+                <button type="submit" class="btn btn-primary">Salva</button>
             </div>
-
-            <!-- More form inputs -->
-
-        </form>
-        <!-- Form End -->
+        </div>
     </div>
-    </div>
+
 
 
 
     <!-- js bootstrap link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
 
 </body>
 
