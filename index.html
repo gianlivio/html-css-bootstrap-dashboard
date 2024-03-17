@@ -112,19 +112,20 @@
                     </li>
                 </ul>
                 <!-- dropdown button -->
-                <div class="d-flex dropdown my-2 p-3">
+                <div class="d-flex dropdown my-2 p-3 ">
                     <!-- immagine arrotondata -->
                     <img src="./img/2309.jpg" alt="" class="rounded-circle"
-                        style="width: 50px; height: 50px; object-fit: cover; display: block; margin: auto;">
+                        style="width: 30px; height: 30px; object-fit: cover; display: block; margin: auto;">
 
                     <button class="btn btn-secondary dropdown-toggle bg-dark border border-0" type="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Mario Rossi
                     </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Action two</a></li>
-                        <li><a class="dropdown-item" href="#">Action three</a></li>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                        <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Esci</a></li>
                     </ul>
                 </div>
             </div>
@@ -138,9 +139,9 @@
                 <!-- Title -->
 
                 <div class="col-lg-8">
-                    <h1 class="fw-bold">Crea nuovo prodotto</h1>
-                    <p class="text-secondary">I campi contrassegnati con un asterisco (*) sono obbligatori.</p>
-                    <p class="text-secondary">Le immagini devono essere in formato PNG e non devono superare i 4 MB di
+                    <h1 class="fw-bold text-center"">Crea nuovo prodotto</h1>
+                    <p class="text-secondary text-center"">I campi contrassegnati con un asterisco (*) sono obbligatori.</p>
+                    <p class="text-secondary text-center"">Le immagini devono essere in formato PNG e non devono superare i 4 MB di
                         dimensione</p>
 
 
@@ -173,12 +174,12 @@
                         </div>
 
                         <!-- textarea form control -->
-                        <div class="row mb-3">
-                            <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                            
                                 <label for="productDescription" class="form-label"></label>
                                 <textarea class="form-control" id="productDescription" rows="3"
                                     placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri"></textarea>
-                            </div>
+                            
                         </div>
 
                         <!-- File Input - input group-->
@@ -209,6 +210,8 @@
             <!-- Checkbox Inputs for Features -->
             <div class="col-lg-4">
                 <form>
+                    <ul class="list-group">
+                        <li class="list-group-item">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="cameraCheck">
                         <label class="form-check-label" for="cameraCheck">
@@ -216,6 +219,8 @@
                             <p>foto alta qualità e video nitidi</p>
                         </label>
                     </div>
+                    </li>
+                    <li class="list-group-item">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="displaycheck">
                         <label class="form-check-label" for="displayCheck">
@@ -223,6 +228,8 @@
                             <p>colori vividi per un'esperienza visiva unica</p>
                         </label>
                     </div>
+                    </li>
+                    <li class="list-group-item">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="cpucheck">
                         <label class="form-check-label" for="cpucheck">
@@ -230,6 +237,8 @@
                             <p>colori vividi per un'esperienza visiva unica</p>
                         </label>
                     </div>
+                    </li>
+                    <li class="list-group-item">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="wirelesscheck">
                         <label class="form-check-label" for="wirelessCheck">
@@ -237,6 +246,8 @@
                             <p>colori vividi per un'esperienza visiva unica</p>
                         </label>
                     </div>
+                    </li>
+                    <li class="list-group-item">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="5gcheck">
                         <label class="form-check-label" for="5gcheck">
@@ -244,6 +255,8 @@
                             <p>colori vividi per un'esperienza visiva unica</p>
                         </label>
                     </div>
+                    </li>
+                    <li class="list-group-item">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="nfccheck">
                         <label class="form-check-label" for="nfccheck">
@@ -251,9 +264,12 @@
                             <p>colori vividi per un'esperienza visiva unica</p>
                         </label>
                     </div>
+                    </li>
+                </ul>
                 </form>
             </div>
         </div>
+
         <!-- Submit Button -->
         <div class="row mb-3">
             <div class="col-12 col-lg-6">
