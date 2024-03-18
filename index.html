@@ -51,12 +51,9 @@
                                 Dropdown
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">A</a></li>
-                                <li><a class="dropdown-item" href="#">b</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">c</a></li>
+                                <li><a class="dropdown-item" href="sponsorizzazione.html">Sponsorizzazione</a></li>
+                                <li><a class="dropdown-item" href="prodotti.html">Prodotti</a></li>
+                                <li><a class="dropdown-item" href="#">Clienti</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -80,20 +77,20 @@
                 <hr class="border border-1">
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li>
-                        <a href="#" class="nav-link text-white" aria-current="page">
+                        <a href="index.html" class="nav-link text-white" aria-current="page">
                             <i class="fas fa-home"></i>
                             Dashboard
                         </a>
 
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-white">
+                        <a href="sponsorizzazione.html" class="nav-link text-white">
                             <i class="fas fa-hand-holding-usd"></i>
                             Sponsorizzazione
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-white">
+                        <a href="prodotti.html" class="nav-link text-white">
                             <i class="fas fa-box"></i>
                             Prodotti
                         </a>
@@ -134,7 +131,7 @@
         <!-- Main Content -->
 
 
-        <div class="container mt-5 mt-md-3 pt-5">
+        <div class="container mt-5 mt-md-3 pt-5 overflow-y-scroll vh-100">
             <div class="row">
                 <!-- Title -->
 
@@ -184,10 +181,11 @@
 
                         <!-- File Input - input group-->
                         <div class="input-group mb-3">
-                            <span class="input-group-text">Scegli file</span>
-                            <input type="text" class="form-control" placeholder="Nessun file selezionato">
+                            <input type="file" class="form-control" id="inputGroupFile" style="display: none;">
+                            <label class="input-group-text" for="inputGroupFile">Scegli file</label>
+                            <input type="text" class="form-control" placeholder="Nessun file selezionato" readonly>
                             <span class="input-group-text">Immagine</span>
-                        </div>
+                          </div>
 
                         <!-- Outlined Styles Button group -->
                         <div class="btn-group mb-3" role="group" aria-label="Basic outlined example">
